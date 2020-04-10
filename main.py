@@ -107,12 +107,28 @@ def chat():
         results = model.predict([bag_of_words(inp,words)])[0]
         results_index = np.argmax(results)
         tag = labels[results_index]
-
-        if results[results_index] > 0.6:
-            for tg in data["intents"]:
+        if tag == 'action':
+            fetch_data(1)
+        elif tag == 'history':                  
+            fetch_data(2)
+        elif tag == 'anthology':
+            fetch_data(3)
+        elif results[results_index] > 0.6:
+            for x,tg in enumerate(data["intents"]):
                 if tg['tag'] == tag:
                     responses = tg['responses']
             print(random.choice(responses))
         else:
             print("I didn't get that, kindly be more specific!")
+
+def fetch_data(s):
+    book = open("books.txt")
+    for n,name in enumerate(book):
+        if n==(s-1):
+            print(name,end="")
+
 chat()
+
+for x, tg in enumerate(data['intents']):
+    print(x,tg)
+    print(data['intents'])

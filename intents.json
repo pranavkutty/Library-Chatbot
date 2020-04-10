@@ -10,7 +10,7 @@
          "context_set": ""
         },
         {"tag": "membership",
-         "patterns": ["what are the membership details", "how can i become a member", "what are the membership charges","what is the price for membership", "who can become a member","what is the age constraints for becoming a member"],
+         "patterns": ["how can i be a member","what are the membership details", "how can i become a member", "what are the membership charges","what is the price for membership", "who can become a member","what is the age constraints for becoming a member"],
          "responses": ["Children under 16(Childrens Section) need to pay Rs 500 annual charges and any other person need to pay Rs 800 annualy to become a member"],
          "context_set": ""
         },
@@ -27,6 +27,21 @@
         {"tag": "overdue",
          "patterns": ["what are the overdue charges", "what is the fine for single day","what is the late return fine?"],
          "responses": ["You have to pay a fine of 10Rs per day since Return date"],
+         "context_set": ""
+        },
+        {"tag": "action",
+         "patterns": ["How many copies of 'Action and Adventure'?", "No. of copies of 'Action and adventure'?"],
+         "responses": [""],
+         "context_set": ""
+        },
+        {"tag": "history",
+         "patterns": ["How many copies of historic fiction?", "No. of copies of historic fiction?"],
+         "responses": [""],
+         "context_set": ""
+        },
+        {"tag": "anthology",
+         "patterns": ["How many copies of anthology?", "No. of copies of anthology?"],
+         "responses": [""],
          "context_set": ""
         },
         {"tag": "basicdetails",
