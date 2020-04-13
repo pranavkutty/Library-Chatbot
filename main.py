@@ -122,13 +122,10 @@ def chat():
             print("I didn't get that, kindly be more specific!")
 
 def fetch_data(s):
-    book = open("books.txt")
+    book = open("booksdatabase.txt")
     for n,name in enumerate(book):
         if n==(s-1):
             print(name,end="")
 
 chat()
 
-for x, tg in enumerate(data['intents']):
-    print(x,tg)
-    print(data['intents'])

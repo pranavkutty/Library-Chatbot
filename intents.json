@@ -1,6 +1,6 @@
 {"intents": [
         {"tag": "greeting",
-         "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day", "Whats up","hey"],
+         "patterns": ["Hi", "How are you", "Hello", "Whats up","hey","greeting"],
          "responses": ["Hello!", "Good to see you again!", "Hi there, how can I help?"],
          "context_set": ""
         },
@@ -10,27 +10,27 @@
          "context_set": ""
         },
         {"tag": "membership",
-         "patterns": ["how can i be a member","what are the membership details", "how can i become a member", "what are the membership charges","what is the price for membership", "who can become a member","what is the age constraints for becoming a member"],
+         "patterns": ["how can i be a member","what are the membership details", "how can i be a member", "what are the membership charges","membership","what is the price for membership", "who can be a member","what is the age for becoming a member"],
          "responses": ["Children under 16(Childrens Section) need to pay Rs 500 annual charges and any other person need to pay Rs 800 annualy to become a member"],
          "context_set": ""
         },
         {"tag": "issue",
-         "patterns": ["Can we issue books?","How many books can i issue?","How many days can i issue a book for?"],
+         "patterns": ["Can we issue books?","How many books can i issue?","How many days can i issue a book for?","issue"],
          "responses": ["You can issue maximum of 2 books for 14 days each"],
          "context_set": ""
         },
         {"tag": "renew",
-         "patterns": ["Can i renew books?","Can i reissue books?"],
+         "patterns": ["Can i renew books?","Can i reissue books?","renew"],
          "responses": ["Yes you can reissue books and get a weeks extension"],
          "context_set": ""
         },
         {"tag": "overdue",
-         "patterns": ["what are the overdue charges", "what is the fine for single day","what is the late return fine?"],
+         "patterns": ["what are the overdue charges", "what is the fine for single day","what is the late return fine?","overdue"],
          "responses": ["You have to pay a fine of 10Rs per day since Return date"],
          "context_set": ""
         },
         {"tag": "action",
-         "patterns": ["How many copies of 'Action and Adventure'?", "No. of copies of 'Action and adventure'?"],
+         "patterns": ["How many copies of action and adventure?", "No. of copies of action and adventure?"],
          "responses": [""],
          "context_set": ""
         },
@@ -45,7 +45,7 @@
          "context_set": ""
         },
         {"tag": "basicdetails",
-         "patterns": ["What services does the library offer?", "what services are offered here?","What services do you offer?"],
+         "patterns": ["What can you do?", "what services are offered here?","What services do you offer?"],
          "responses": ["You can issue,renew and return books if you have an active membership"],
          "context_set": ""
         },
@@ -55,7 +55,7 @@
          "context_set": ""
         },
         {"tag": "genre",
-         "patterns": ["What type of books are available","what type of books do you have", "what genre of books are available", "what type of books do you recommend?"],
+         "patterns": ["What type of books","what type of books do you have", "what genre of books are available"],
          "responses": ["Currently we have: 'Action and adventure', 'Historic fiction', 'Religion and spirituality' and 'Anthology'"],
          "context_set": ""
         }
